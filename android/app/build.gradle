@@ -95,8 +95,4 @@ flutter {
     source = "../.."
 }
 
-kotlin {
-    jvmToolchain(17)
-}
-
 apply plugin: 'com.google.gms.google-services'
