@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../cores/base/base_provider_view.dart';
 import '../../../cores/routers/router_constant.dart';
 import '../../../cores/utils/navigation_service.dart';
-import '../../../cores/widgets/buttons/button.dart';
+import '../../../cores/widgets/buttons/custom_elevated_button.dart';
 import '../../../cores/widgets/tap_detector.dart';
 import '../../../cores/widgets/text_app_bar.dart';
 import '../../../hive/hive_helper.dart';
@@ -68,7 +68,7 @@ class DownloadMasterView extends StatelessWidget {
                 ),
               ),
             ),
-            Button(
+            CustomElevatedButton(
               width: double.infinity,
               text: 'Download All',
               isLoading: data.downloadList
@@ -78,7 +78,7 @@ class DownloadMasterView extends StatelessWidget {
             const SizedBox(
               height: 16,
             ),
-            Button(
+            CustomElevatedButton(
               width: double.infinity,
               text: 'Clear Data',
               style: ElevatedButton.styleFrom(

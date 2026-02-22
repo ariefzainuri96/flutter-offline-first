@@ -4,7 +4,7 @@ import '../../../cores/constants/colors.dart';
 import '../../../cores/constants/enums/page_state.dart';
 import '../../../hive/entity/kode_daerah_data.dart';
 import '../../../cores/utils/widget_extension.dart';
-import '../../../cores/widgets/buttons/button.dart';
+import '../../../cores/widgets/buttons/custom_elevated_button.dart';
 import '../../../cores/widgets/custom_dropdown.dart';
 import '../../../cores/widgets/custom_text_field.dart';
 import '../../../cores/widgets/text_app_bar.dart';
@@ -60,7 +60,7 @@ class AddDataView extends StatelessWidget {
               ),
             ],
             const Spacer(),
-            Button(
+            CustomElevatedButton(
               width: double.infinity,
               isLoading: data.addDataState == PageState.loading,
               text: 'Tambah Data',

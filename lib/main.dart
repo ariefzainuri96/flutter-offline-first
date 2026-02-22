@@ -1,8 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'generated/app_localizations.dart';
 import 'cores/config/env.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -27,6 +27,11 @@ void main() {
       const envFile = flavor == 'prod' ? '.env.prod' : '.env.stage';
 
       await dotenv.load(fileName: envFile);
+
+      await Supabase.initialize(
+        url: EnvData.supabaseUrl,
+        anonKey: EnvData.supabaseKey,
+      );
 
       setupFlavor(flavor);
 

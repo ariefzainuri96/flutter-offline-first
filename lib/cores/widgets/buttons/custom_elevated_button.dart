@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 
 //ignore: must_be_immutable
-class Button extends StatelessWidget {
+class CustomElevatedButton extends StatelessWidget {
   final String text;
   final double widgetSpacing;
   final Widget? leadingWidget;
@@ -18,7 +18,7 @@ class Button extends StatelessWidget {
   ///[onPressed] must be null to disable button
   final void Function()? onPressed;
 
-  Button({
+  CustomElevatedButton({
     super.key,
     required this.text,
     required this.onPressed,

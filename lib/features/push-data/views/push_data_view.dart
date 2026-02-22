@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../cores/base/base_provider_view.dart';
 import '../../../hive/entity/add_data.dart';
-import '../../../cores/widgets/buttons/button.dart';
+import '../../../cores/widgets/buttons/custom_elevated_button.dart';
 import '../../../cores/widgets/text_app_bar.dart';
 import '../providers/push_data_provider.dart';
 import 'push_data_widget.dart';
@@ -53,7 +53,7 @@ class PushDataView extends StatelessWidget {
                     ),
             ),
             if (data.listSavedData.isNotEmpty)
-              Button(
+              CustomElevatedButton(
                 width: double.infinity,
                 text: 'Push All',
                 isLoading: data.listSavedData

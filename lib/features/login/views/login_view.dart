@@ -4,7 +4,7 @@ import '../../../cores/constants/colors.dart';
 import '../../../cores/constants/enums/page_state.dart';
 import '../../../cores/constants/text_theme.dart';
 import '../../../cores/utils/widget_extension.dart';
-import '../../../cores/widgets/buttons/button.dart';
+import '../../../cores/widgets/buttons/custom_elevated_button.dart';
 import '../../../cores/widgets/custom_text_field.dart';
 import '../../../cores/widgets/text_app_bar.dart';
 import '../providers/login_provider.dart';
@@ -59,7 +59,7 @@ class LoginView extends StatelessWidget {
               },
             ).padSymmetric(vertical: 12),
             const Spacer(),
-            Button(
+            CustomElevatedButton(
               width: double.infinity,
               isLoading: data.loginState == PageState.loading,
               text: 'Masuk',

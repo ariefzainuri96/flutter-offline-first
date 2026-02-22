@@ -3,7 +3,7 @@ import '../constants/colors.dart';
 import '../constants/text_theme.dart';
 import '../utils/navigation_service.dart';
 import '../utils/widget_extension.dart';
-import 'buttons/button.dart';
+import 'buttons/custom_elevated_button.dart';
 import 'tap_detector.dart';
 
 class CustomConfirmationDialog extends StatelessWidget {
@@ -68,7 +68,7 @@ class CustomConfirmationDialog extends StatelessWidget {
                               .copyWith(decoration: TextDecoration.none),
                         ),
                       ),
-                    Button(
+                    CustomElevatedButton(
                       text: confirmText,
                       height: 40,
                       style: ElevatedButton.styleFrom(
